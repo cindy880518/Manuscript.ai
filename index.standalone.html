@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智慧論文審核 · Design Delivery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#FBF7EE">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <!-- Warm cream background grid -->
+    <rect width="1200" height="800" fill="#FBF7EE"/>
+    <!-- Two artboards silhouette (Figma-style canvas) -->
+    <rect x="180" y="220" width="380" height="360" rx="18" fill="#fff" stroke="#E8E2D1" stroke-width="2"/>
+    <rect x="600" y="220" width="420" height="360" rx="18" fill="#fff" stroke="#E8E2D1" stroke-width="2"/>
+    <!-- Yellow marker dot bleed -->
+    <circle cx="560" cy="240" r="68" fill="#F4C349"/>
+    <!-- Editorial M monogram -->
+    <text x="600" y="430" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="260" font-weight="500" fill="#181612" text-anchor="middle" letter-spacing="-12">M</text>
+    <!-- Hairline accents -->
+    <rect x="240" y="278" width="160" height="8" rx="2" fill="#181612"/>
+    <rect x="240" y="306" width="200" height="4" rx="1" fill="#C4C4C4"/>
+    <rect x="240" y="320" width="140" height="4" rx="1" fill="#C4C4C4"/>
+    <rect x="660" y="510" width="120" height="6" rx="2" fill="#F4C349"/>
+    <!-- Wordmark -->
+    <text x="600" y="680" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" fill="#181612" text-anchor="middle" letter-spacing="-0.5">Manuscript<tspan fill="#646566">.ai</tspan></text>
+    <text x="600" y="720" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#646566" text-anchor="middle">Design Delivery · Loading…</text>
+  </svg>
+</template>
+<div id="root"></div>
+
+<!-- React / Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<!-- Starter components -->
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+
+<!-- Shared design primitives -->
+<script type="text/babel" src="js/primitives.jsx"></script>
+
+<!-- The prototype app (used inside Section 7) -->
+<script type="text/babel" src="js/prototype.jsx"></script>
+
+<!-- Each section of the design delivery canvas -->
+<script type="text/babel" src="js/sec-cover.jsx"></script>
+<script type="text/babel" src="js/sec-system.jsx"></script>
+<script type="text/babel" src="js/sec-flow.jsx"></script>
+<script type="text/babel" src="js/sec-wireframes.jsx"></script>
+<script type="text/babel" src="js/sec-mockups.jsx"></script>
+<script type="text/babel" src="js/sec-prototype.jsx"></script>
+<script type="text/babel" src="js/sec-components.jsx"></script>
+
+<!-- Main app composition -->
+<script type="text/babel" src="js/canvas-app.jsx"></script>
+</body>
+</html>
